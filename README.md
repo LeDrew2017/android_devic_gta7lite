@@ -1,1 +1,1 @@
-# android_devic_gta7lite
+# android_device_gta7lite
