@@ -9,7 +9,7 @@
 /efs           ext4      /dev/block/platform/bootdevice/by-name/sec_efs       flags=display="Efs"
 /carrier       ext4      /dev/block/platform/bootdevice/by-name/carrier       flags=display="Carrier"
 /preload       ext4      /dev/block/platform/bootdevice/by-name/hidden        flags=display="Preload"
-/sdcard1       sdfat     /dev/block/mmcblk1p1                                 flags=display="Sdcard1"
+/sdcard1       sdfat     /dev/block/mmcblk1p1                                 flags=display="External SD card;removable
 /modem         emmc      /dev/block/platform/bootdevice/by-name/apnhlos       flags=display="Modem"
 /mdm           emmc      /dev/block/platform/bootdevice/by-name/modem         flags=display="Mdm"
 /dsp           emmc      /dev/block/platform/bootdevice/by-name/dsp           flags=display="Dsp"
