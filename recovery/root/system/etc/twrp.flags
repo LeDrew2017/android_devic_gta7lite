@@ -3,14 +3,9 @@
 /system        ext4      system                                               flags=display="System";logical;
 /vendor        ext4      vendor                                               flags=display="Vendor";logical;
 /product       ext4      product                                              flags=display="Product";logical;
-/odm           ext4      odm                                                  flags=display="Odm";backup=1;logical;
+/odm           ext4      odm                                                  flags=display="Odm";backup=1;logical;				   
 
-# Symlinked partitions
-/system_image	emmc		/dev/block/dm-0				      flags=backup=1;wipeingui;flashimg=1;display="System Image";
-/vendor_image	emmc		/dev/block/dm-2				      flags=backup=1;wipeingui;flashimg=1;display="Vendor Image";
-/product_image	emmc		/dev/block/dm-1				      flags=backup=1;wipeingui;flashimg=1;display="Product Image";
-/odm_image	emmc		/dev/block/dm-3				      flags=backup=1;flashimg=1;wipeingui;display="ODM Image";
-
+#Physical Partitions
 /metadata      ext4      /dev/block/platform/bootdevice/by-name/md_udc	      flags=backup=1;display="Metadata";
 /boot          emmc      /dev/block/platform/bootdevice/by-name/boot          flags=display="Boot";backup=1;flashimg=1;
 /recovery      emmc      /dev/block/platform/bootdevice/by-name/recovery      flags=display="Recovery";backup=1;flashimg=1;
@@ -32,5 +27,5 @@
 /prism         ext4      /dev/block/platform/bootdevice/by-name/prism         flags=backup=1;flashimg=1;display="Prism Image";
 
 # Removable storage
-/sdcard1       auto      /dev/block/mmcblk1p1                                 flags=storage;wipeingui;removable;display="External SDcard"
+/external_sd   auto      /dev/block/mmcblk1p1                                 flags=storage;wipeingui;removable;display="External SDcard"
 /usb-otg       auto	 /dev/block/sdf1		/dev/block/sdf	      flags=display="USB-OTG";storage;wipeingui;removable
