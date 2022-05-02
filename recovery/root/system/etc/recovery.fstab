@@ -41,7 +41,7 @@ odm                                                  /odm          ext4        r
 /dev/block/platform/bootdevice/by-name/misc        /misc           emmc        defaults                  
 /dev/block/platform/bootdevice/by-name/md_udc	/metadata	ext4	defaults	wait,first_stage_mount
 # external SD card
-/dev/block/mmcblk1p1                               /sdcard         sdfat       defaults                  
+/dev/block/mmcblk1p1                               /sdcard         vfat       defaults                  
 
 # FOTA
 /dev/block/platform/bootdevice/by-name/apnhlos     /modem          emmc        defaults                  
