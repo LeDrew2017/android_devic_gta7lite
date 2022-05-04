@@ -31,42 +31,7 @@ vendor                                               /vendor       ext4        r
 product                                              /product      ext4        ro,barrier=1,discard      avb,logical,first_stage_mount
 odm                                                  /odm          ext4        ro,barrier=1,discard      avb,logical,first_stage_mount
 
-/dev/block/platform/bootdevice/by-name/boot        /boot           emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/recovery    /recovery       emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/userdata	/data	f2fs	noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678	wait,length=-16384
-/dev/block/platform/bootdevice/by-name/cache       /cache          ext4        defaults                  
-/dev/block/platform/bootdevice/by-name/sec_efs     /efs            ext4        defaults                  
-/dev/block/platform/bootdevice/by-name/carrier     /carrier        ext4        defaults                  
-/dev/block/platform/bootdevice/by-name/hidden      /preload        ext4        defaults                  
+/dev/block/platform/bootdevice/by-name/userdata	/data	f2fs	noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678	wait,length=-16384                                                      
 /dev/block/platform/bootdevice/by-name/misc        /misc           emmc        defaults                  
 /dev/block/platform/bootdevice/by-name/md_udc	/metadata	ext4	defaults	wait,first_stage_mount
-# external SD card
-/dev/block/mmcblk1p1                               /sdcard         vfat       defaults                  
-
-# FOTA
-/dev/block/platform/bootdevice/by-name/apnhlos     /modem          emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/modem       /mdm            emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/dsp         /dsp            emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/dtbo        /dtbo           emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/md1img      /md1img         emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/spmfw       /spmfw          emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/scp1        /scp1           emmc        defaults                  
-/dev/block/platform/bootdevice/by-name/sspm_1      /sspm_1         emmc        defaults                  
-
-#Auto-generated code by FOTA Portal
-/dev/block/platform/bootdevice/by-name/gz1	/gz1	emmc	default	
-/dev/block/platform/bootdevice/by-name/optics	/optics	ext4	default	
-/dev/block/platform/bootdevice/by-name/prism	/prism	ext4	default	
-
-
-
-#Auto-generated code by FOTA Portal
-/dev/block/platform/bootdevice/by-name/cam_vpu1	/cam_vpu1	emmc	default	
-/dev/block/platform/bootdevice/by-name/cam_vpu2	/cam_vpu2	emmc	default	
-/dev/block/platform/bootdevice/by-name/cam_vpu3	/cam_vpu3	emmc	default	
-/dev/block/platform/bootdevice/by-name/pi_img	/pi_img	emmc	default	
-
-
-
-#Auto-generated code by FOTA Build Portal
-/dev/block/platform/bootdevice/by-name/grd_fw	/grd_fw	emmc	default	
+	
